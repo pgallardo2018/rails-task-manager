@@ -1,16 +1,4 @@
-<div class="container">
+<div>
   <h1>New Task</h1>
-  <%= form_with model: @task do |f| %>
-    <div>
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-    </div>
-
-    <div>
-      <%= f.label :details %>
-      <%= f.text_area :details %>
-    </div>
-
-    <%= f.submit %>
-  <% end %>
 </div>
+<%= render 'form', task: @task %>
